@@ -1,5 +1,4 @@
-// import logo from ".logo/.svg";
-import "./App.css";
+import "./components/App/App.css";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
@@ -9,7 +8,7 @@ import ItemModal from "./components/ItemModal/ItemModal";
 import { getForecastWeather, parseWeatherData } from "./utils/weatherApi";
 
 function App() {
-  const weatherTemp = "75° F";
+  // const weatherTemp = "75° F";
   const [activeModal, setActiveModal] = useState("");
   const [selectedCard, setSelectedCard] = useState({});
   const [temp, setTemp] = useState(0);
@@ -33,7 +32,6 @@ function App() {
       setTemp(temperature);
     });
   }, []);
-  console.log(temp);
 
   return (
     <div>
@@ -41,7 +39,11 @@ function App() {
       <Main weatherTemp={temp} onSelectCard={handleSelectedCard} />
       <Footer />
       {activeModal === "create" && (
-        <ModalWithForm title="New Garments" onClose={handleCloseModal}>
+        <ModalWithForm
+          buttonText="Add garment"
+          title="New Garments"
+          onClose={handleCloseModal}
+        >
           <label className="modal__label">
             Name
             <input
@@ -67,16 +69,16 @@ function App() {
           <label className="modal__label">Select the weather type</label>
           <div className="modal__temp">
             <div>
-              <input type="radio" id="hot" value="hot" />
-              <label>Hot</label>
+              <input type="radio" id="hot" value="hot" name="weather type" />
+              <label id="hot">Hot</label>
             </div>
             <div>
-              <input type="radio" id="warm" value="warm" />
-              <label>Warm</label>
+              <input type="radio" id="warm" value="warm" name="weather type" />
+              <label id="warm">Warm</label>
             </div>
             <div>
-              <input type="radio" id="cold" value="cold" />
-              <label>Cold</label>
+              <input type="radio" id="cold" value="cold" name="weather type" />
+              <label id="cold">Cold</label>
             </div>
           </div>
         </ModalWithForm>
