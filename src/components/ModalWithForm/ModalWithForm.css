@@ -36,7 +36,7 @@
 }
 
 .modal__close {
-  background-image: url(../images/close.svg);
+  background-image: url(../../images/close.svg);
   position: absolute;
   top: 20px;
   right: 20px;
