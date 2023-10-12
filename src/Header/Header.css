@@ -5,6 +5,11 @@
   align-items: center;
   min-height: 60px;
   padding: 32px 40px 28px 40px;
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-size: 20px;
+  font-style: bold;
+  font-weight: 700;
+  line-height: 24px;
 }
 
 .header__logo {
@@ -21,29 +26,20 @@
 }
 .header__date {
   color: black;
-  font-family: "Cabinet Grotesk" sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px;
+
   margin: 0;
 }
 .header__add-button {
   color: #000;
   font-family: "Cabinet Grotesk", sans-serif;
   font-size: 20px;
-  font-style: normal;
+  font-style: bold;
   font-weight: 700;
-  line-height: 24px; /* 120% */
+  line-height: 24px;
   background-color: #fff;
   border: none;
   cursor: pointer;
 }
 .header__name {
   color: #000;
-  font-family: "Cabinet Grotesk", sans-serif;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 24px;
 }

@@ -1,5 +1,6 @@
 .weather {
   position: relative;
+  padding-bottom: 20px;
 }
 .weather__info {
   position: absolute;

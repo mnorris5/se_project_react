@@ -10,7 +10,7 @@ const Header = ({ onCreateModal }) => {
 
   return (
     <header className="header">
-      <div className="header __logo">
+      <div className="header__logo">
         <div>
           <img src={require("../images/logo.svg").default} alt="logo" />
         </div>
