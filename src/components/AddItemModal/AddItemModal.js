@@ -1,14 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import ModalWithForm from "../ModalWithForm/ModalWithForm";
 
 const AddItemModal = ({ handleCloseModal, onAddItem, isOpen }) => {
+  const [name, setName] = useState("");
+  const handleNameChange = (e) => {
+    console.log(e.target.value);
+    setName(e.target.value);
+  };
+  const [link, setUrl] = useState("");
+  const handleUrlChange = (e) => {
+    console.log(e.target.value);
+    setUrl(e.target.value);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    onAddItem({ name, link });
+  };
   return (
     <ModalWithForm
       buttonText="Add garment"
       title="New Garments"
       onClose={handleCloseModal}
       isOpen={isOpen}
-      onSubmit={onAddItem}
+      onSubmit={handleSubmit}
     >
       <label className="modal__label">
         Name
@@ -19,6 +34,8 @@ const AddItemModal = ({ handleCloseModal, onAddItem, isOpen }) => {
           minLength="1"
           maxLength="30"
           placeholder="Name"
+          value={name}
+          onChange={handleNameChange}
         />
       </label>
       <label className="modal__label">
@@ -30,6 +47,8 @@ const AddItemModal = ({ handleCloseModal, onAddItem, isOpen }) => {
           minLength="1"
           maxLength="30"
           placeholder="Image URL"
+          value={link}
+          onChange={handleUrlChange}
         />
       </label>
       <label className="modal__label">Select the weather type</label>

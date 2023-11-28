@@ -7,6 +7,7 @@ const ModalWithForm = ({
   onClose,
   name,
   isOpen,
+  onSubmit,
 }) => {
   console.log("ModalWithForm");
   return (
