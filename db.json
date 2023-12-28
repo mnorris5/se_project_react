@@ -1,0 +1,75 @@
+{
+  "items": [
+    {
+      "_id": 1,
+      "name": "Boot",
+      "weather": "cold",
+      "imageUrl": "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/wtwr-project/Boot.png?etag=0953a2ea59f1c6ebc832fabacdc9c70e"
+    },
+    {
+      "_id": 7,
+      "name": "Jeans",
+      "weather": "warm",
+      "imageUrl": "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/wtwr-project/Jeans.png?etag=58345e8bef1ce5f95ac882e71d309e6c"
+    },
+    {
+      "_id": 11,
+      "name": "Shorts",
+      "weather": "Hot",
+      "imageUrl": "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/wtwr-project/Shorts.png?etag=d728c496643f610de8d8fea92dd915ba"
+    },
+    {
+      "_id": 12,
+      "name": "Skirt",
+      "weather": "hot",
+      "imageUrl": "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/wtwr-project/Skirt.png?etag=27a6bea7e1b63218820d615876fa31d1"
+    },
+    {
+      "_id": 13,
+      "name": "Sneakers",
+      "weather": "warm",
+      "imageUrl": "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/wtwr-project/Sneakers.png?etag=3efeec41c1c78b8afe26859ca7fa7b6f"
+    },
+    {
+      "_id": 14,
+      "name": "Sunglasses",
+      "weather": "hot",
+      "imageUrl": "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/wtwr-project/Sunglasses.png?etag=a1bced9e331d36cb278c45df51150432"
+    },
+    {
+      "_id": 15,
+      "name": "Sweatshirt",
+      "weather": "warm",
+      "imageUrl": "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/wtwr-project/Sweatshirt.png?etag=008a9674757bea2e0bdb31242e364be0"
+    },
+    {
+      "_id": 16,
+      "name": "T-Shirt",
+      "weather": "hot",
+      "imageUrl": "https://practicum-content.s3.us-west-1.amazonaws.com/software-engineer/wtwr-project/T-Shirt.png?etag=44ed1963c44ab19cd2f5011522c5fc09"
+    },
+    {
+      "name": "hjfk",
+      "imageUrl": "https://media.istockphoto.com/id/1364208715/photo/pink-wool-knitted-sweater-flies-as-if-dancing-hands-up-levitates-on-cyan-background-concept.webp?b=1&s=170667a&w=0&k=20&c=NJw4hcH3FjVRZ94ssOpgxYN3m5U9OeCcw06VeXqzCPU=",
+      "_id": 20
+    },
+    {
+      "name": "123",
+      "imageUrl": "https://images.unsplash.com/photo-1559583985-c80d8ad9b29f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "weather": "cold",
+      "_id": 21
+    },
+    {
+      "name": "123",
+      "imageUrl": "https://media.istockphoto.com/id/1364208715/photo/pink-wool-knitted-sweater-flies-as-if-dancing-hands-up-levitates-on-cyan-background-concept.webp?b=1&s=170667a&w=0&k=20&c=NJw4hcH3FjVRZ94ssOpgxYN3m5U9OeCcw06VeXqzCPU=",
+      "weather": "cold",
+      "_id": 22
+    },
+    {
+      "name": "ersgrgrr",
+      "imageUrl": "https://media.istockphoto.com/id/1364208715/photo/pink-wool-knitted-sweater-flies-as-if-dancing-hands-up-levitates-on-cyan-background-concept.webp?b=1&s=170667a&w=0&k=20&c=NJw4hcH3FjVRZ94ssOpgxYN3m5U9OeCcw06VeXqzCPU=",
+      "weather": "cold",
+      "_id": 23
+    }
+  ]
+}

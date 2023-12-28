@@ -90,6 +90,21 @@
   border-bottom: 1px solid black;
   padding-top: 10px;
 }
+.modal__delete-button {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Cabinet-Grotesk", sans-serif;
+  color: red;
+  border: none;
+  background-color: transparent;
+  left: 150px;
+  top: -50px;
+  position: relative;
+  padding: 0;
+}
+.modal__delete-button:hover {
+  cursor: pointer;
+}
 
 /* .modal__image {
 } */

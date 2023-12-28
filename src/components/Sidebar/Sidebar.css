@@ -1,0 +1,16 @@
+.profile__logo {
+  font-family: "Cabinet Grotesk", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  height: 40px;
+  gap: 16px;
+  display: flex;
+  margin: 0 0 0 40px;
+}
+.profile__avatar-image {
+  border-radius: 50%;
+  background-color: black;
+}
+.profile__avatar-name {
+  align-self: center;
+}

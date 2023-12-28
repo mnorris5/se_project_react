@@ -3,19 +3,26 @@ import ModalWithForm from "../ModalWithForm/ModalWithForm";
 
 const AddItemModal = ({ handleCloseModal, onAddItem, isOpen }) => {
   const [name, setName] = useState("");
+  const [imageUrl, setUrl] = useState("");
+  const [weather, setWeather] = useState("");
+
   const handleNameChange = (e) => {
     console.log(e.target.value);
     setName(e.target.value);
   };
-  const [link, setUrl] = useState("");
+
   const handleUrlChange = (e) => {
     console.log(e.target.value);
     setUrl(e.target.value);
   };
+  const handleWeatherChange = (e) => {
+    console.log(e.target.value);
+    setWeather(e.target.value);
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onAddItem({ name, link });
+    onAddItem({ name, imageUrl, weather });
   };
   return (
     <ModalWithForm
@@ -43,16 +50,15 @@ const AddItemModal = ({ handleCloseModal, onAddItem, isOpen }) => {
         <input
           className="modal__input"
           type="url"
-          name="link"
+          name="imageUrl"
           minLength="1"
-          maxLength="30"
           placeholder="Image URL"
-          value={link}
+          value={imageUrl}
           onChange={handleUrlChange}
         />
       </label>
       <label className="modal__label">Select the weather type</label>
-      <div className="modal__temp">
+      <div className="modal__temp" onChange={handleWeatherChange}>
         <div>
           <input type="radio" id="hot" value="hot" name="weather type" />
           <label id="hot">Hot</label>
@@ -71,3 +77,9 @@ const AddItemModal = ({ handleCloseModal, onAddItem, isOpen }) => {
 };
 
 export default AddItemModal;
+
+
+// style delete button dont forget the pointer
+// style profile
+// style footer
+// fix error
