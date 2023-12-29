@@ -1,11 +1,11 @@
 import React from "react";
 import "./Profile.css";
-import Sidebar from "../SideBar/Sidebar";
+import SideBar from "../SideBar/SideBar";
 import ClothesSection from "../ClothesSection/ClothesSection";
 const Profile = ({ onSelectCard, onCreateModal, clothingItems }) => {
   return (
     <div className="profile">
-      <Sidebar />
+      <SideBar />
       <ClothesSection
         onSelectCard={onSelectCard}
         onCreateModal={onCreateModal}
