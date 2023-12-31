@@ -97,5 +97,5 @@ export const weatherOptions = [
 ];
 
 export const latitude = 41.49;
-export const longitude = 81.69;
+export const longitude = -81.69;
 export const APIkey = "ba5a67882c1f40d619edf60400edad15";

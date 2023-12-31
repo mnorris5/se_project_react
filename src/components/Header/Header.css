@@ -24,7 +24,7 @@
   align-items: center;
   justify-content: space-between;
 }
-.header__date {
+.header__date-location {
   color: black;
 
   margin: 0;

@@ -60,16 +60,22 @@ const AddItemModal = ({ handleCloseModal, onAddItem, isOpen }) => {
       <label className="modal__label">Select the weather type</label>
       <div className="modal__temp" onChange={handleWeatherChange}>
         <div>
-          <input type="radio" id="hot" value="hot" name="weather type" />
-          <label id="hot">Hot</label>
+          <label id="hot">
+            <input type="radio" id="hot" value="hot" name="weather type" />
+            Hot
+          </label>
         </div>
         <div>
-          <input type="radio" id="warm" value="warm" name="weather type" />
-          <label id="warm">Warm</label>
+          <label id="warm">
+            <input type="radio" id="warm" value="warm" name="weather type" />
+            Warm
+          </label>
         </div>
         <div>
-          <input type="radio" id="cold" value="cold" name="weather type" />
-          <label id="cold">Cold</label>
+          <label id="cold">
+            <input type="radio" id="cold" value="cold" name="weather type" />
+            Cold
+          </label>
         </div>
       </div>
     </ModalWithForm>
@@ -77,7 +83,6 @@ const AddItemModal = ({ handleCloseModal, onAddItem, isOpen }) => {
 };
 
 export default AddItemModal;
-
 
 // style delete button dont forget the pointer
 // style profile

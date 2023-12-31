@@ -1,11 +1,11 @@
 import "./Header.css";
 import { Link } from "react-router-dom";
-
+// import { parseWeatherData } from "../../utils/weatherApi";
 import logoImage from "../../images/logo.svg";
 import avatarImage from "../../images/avatar.svg";
 import ToggleSwitch from "../ToggleSwitch/ToggleSwitch";
 
-const Header = ({ onCreateModal }) => {
+const Header = ({ weatherData, onCreateModal }) => {
   const currentDate = new Date().toLocaleString("default", {
     month: "long",
     day: "numeric",
@@ -19,7 +19,9 @@ const Header = ({ onCreateModal }) => {
             <img src={logoImage} alt="Logo" />
           </Link>
         </div>
-        <div className="header__date">{currentDate}</div>
+        <div className="header__date-location">
+          {currentDate}, {weatherData.name}
+        </div>
       </div>
       <div className="header__avatar-logo">
         <ToggleSwitch />
